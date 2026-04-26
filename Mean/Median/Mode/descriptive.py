@@ -4,6 +4,9 @@ import numpy as np
 # import scipy to dinf mode
 from scipy import stats as st
 
+# IMPORT matplotlib for visualization
+import matplotlib.pyplot as mpp
+
 # generate data randomly 
 data = np.random.uniform(0.0,5.0,100000)
 
@@ -38,3 +41,6 @@ print(" varience :" + str(v))
 print("")
 print(" coefficient of variation :" + str(cv))
 print("")
+
+mpp.hist(data , 5)
+mpp.show()
